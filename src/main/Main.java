@@ -110,7 +110,7 @@ public class Main {
 
 			ZonedDateTime now = ZonedDateTime.now();
 			ZonedDateTime newy = ZonedDateTime.of(now.getYear(), now.getMonthValue(), now.getDayOfMonth(), 7, 0, 0, 0, ZoneId.systemDefault());
-			if(now.getHour() >= 7) {
+			if(now.getHour() >= 8) {
 				newy = newy.plusDays(1);
 			}
 			Duration dur = Duration.between(now, newy);
